@@ -1,0 +1,430 @@
+body {
+    margin: 0;
+    font-family: Annai, monospace; 
+    background-color: #E7E1D7;
+    color: #1D150D;
+    line-height: 1.5;
+  }
+  
+/* --- header --- */
+.header {
+  background-color: #958673;
+  height: 150px;
+  color: #E7E1D7;
+}
+.header a {
+  color: #E7E1D7;
+  text-decoration: none;
+}
+.header a:hover {
+  color: #1D150D;
+}
+.logo {
+  width: 200px;
+  cursor: pointer;
+  padding-top: 45%;
+}
+.list_logo {
+  list-style: none;
+  cursor: pointer;
+}
+.nav {
+  position: absolute;
+  width: 100vw;
+}
+.nav_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.nav_list_item {
+  list-style: none;
+  position: relative;
+  padding: 1%;
+  cursor: pointer;
+}
+.nav_list_item li:hover {
+  background-color: #6E604A;
+}
+.nav_list_item:hover .nav_list_dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+.nav_list_dropdown {
+  position: absolute;
+  box-shadow: 0 0 10px #6E604A;
+  background-color: #958673;
+  color: #E7E1D7;
+  width: 120%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: 200ms ease-in-out;
+}
+.nav_list_dropdown li {
+  list-style: none;
+  padding: 5%;
+  transition: 200ms ease-in-out;
+}
+.nav_list_dropdown li:hover {
+  background-color: #6E604A;
+}
+
+/* Mobile Styles */
+@media (max-width: 950px) {
+    .logo {
+        width: 150px;
+        padding-top: 30%;
+    }
+    .nav_list {
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 0;
+      margin: 0;
+    }
+}
+  /* --- indhold --- */
+h1 {
+  text-align: center;
+  font-size: xx-large;
+  margin-top: 10%;
+}
+h2 {
+  font-size: x-large;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 8%;
+  padding-bottom: 2%;
+}
+h3 {
+ font-size: large;
+ text-decoration: underline;
+ padding-top: 2%;
+ padding-bottom: 1%;
+}
+h4 {
+  text-decoration: underline;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+.strong-tekst {
+  font-weight: 800;
+}
+/* --- Forsiden --- */
+.forsidebillede {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    padding: 0 10% 0 10%;
+    width: 80%;
+}
+
+/* ------ artikloversigt ------ */
+.artikel_section {
+  margin: 20px auto;
+  width: 80%;
+}
+.artikel_flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.artikel_heading {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: center;
+  text-decoration: underline;
+  font-size: x-large;
+}
+.card {
+  border: 1px solid #1D150D;
+  width: 20rem;
+  height: 25rem;
+  margin-bottom: 30px;
+}
+.card_heading {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.card_top {
+  height: 35px;
+  border-bottom: 1px solid #1D150D;
+  text-align: center;
+  font-size: large;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+.artikel_billede {
+  max-width: 100%;
+  max-height: 80%;
+}
+
+@media (max-width: 950px) {
+  .artikel_section {
+      width: 50%;
+  }
+  .artikel_flexbox {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .artikel_billede {
+    max-width: 100%;
+    max-height: 80%;
+  }
+  .card {
+    max-width: 100%;
+    height: auto;
+  }
+} 
+/* --- artikel 1 --- */ 
+.tekst_boligsøgende {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.facebook_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 2%;
+}
+.facebook_tekst {
+  max-width: 40%;
+  padding-right: 2%;
+}
+.facebookgrupper {
+  max-width: 100%;
+  padding-left: 2%;
+}
+.boligportaler_tekst {
+  padding-top: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.boligportalen_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 2%;
+}
+.boligportal_dk {
+  max-width: 100%;
+  padding-top: 2%;
+}
+.boligportal_app {
+  max-width: 80%;
+  padding-left: 20%;
+}
+.oversigt_boligportaler {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.bolig_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.oversigt_1 {
+  display: flex;
+  flex-direction: row;
+}
+.oversigt_2 {
+  display: flex;
+  flex-direction: row;
+}
+.boligportal {
+  max-width: 92%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+@media (max-width: 950px) {
+  .oversigt_1 {
+    flex-direction: column;
+  }
+  .oversigt_2 {
+    flex-direction: column;
+  }
+  .facebook_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+  .facebook_tekst {
+    padding: 0;
+    max-width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .facebookgrupper {
+    max-width: 60%;
+    padding: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+/* --- artikel 2 --- */ 
+.tekst_sofabord {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.ilva_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 2%;
+}
+.ilva_tekst {
+  text-align: center;
+}
+.ilva_billede {
+  max-width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.overskrift_step {
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.step_container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.step_step {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.step_tekst {
+  width: 100%;
+  padding: 2%;
+}
+.step_billede_højre {
+  max-width: 200px;
+}
+.step_billede_venstre {
+  max-width: 200px;
+}
+.indkøbsliste {
+  list-style: none;
+  padding: 0;
+}
+@media (max-width: 950px) {
+  .step_billede_højre {
+    width: 100%;
+  }
+  .step_billede_venstre {
+    width: 100%;
+  }
+}
+
+
+/* --- artikel 3 --- */ 
+.roomies_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.roomies_tekst {
+  max-width: 50%;
+  padding-right: 10%;
+}
+.roomies_image {
+  max-width: 100%;
+}
+.roomiekontrakt_tekst {
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.roomiekontrakt_elementer {
+  list-style: none;
+  padding: 0;
+}
+.roomiekontrakt_elementer li {
+  margin: 3px 0;
+  padding: 3px;
+  border: 1px solid #ccc;
+}
+.roomiekontrakt {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 2%;
+}
+.roomiekontrakt_billede {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 8%;
+}
+
+@media (max-width: 950px) {
+  .roomies_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .roomies_tekst {
+    padding: 0;
+  }
+  
+  .roomies_image {
+    max-width: 80%;
+    padding-left: 8%;
+  }
+} 
+  p {
+    color: #1D150D;
+  }
+
+  /* --- footer --- */
+  .footer {
+    background-color: #6E604A;
+  }
+
+  .footer_text {
+    text-align: center;
+    color: #E7E1D7;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .some {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+    padding-left: 40%;
+    padding-right: 40%;
+  }
+  .some_logo {
+    width: 45px;
+    max-width: 100%;
+  } 
